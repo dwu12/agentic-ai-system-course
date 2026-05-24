@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Optional setup for the four reference systems.
+# Optional setup for the five reference systems.
 #
 # This script is NOT required to start the course. The chapters in course/
 # stand on their own; references add grounded implementation detail only when
@@ -8,7 +8,7 @@
 # implementation drilling, or explicit "how does X handle Y" asks).
 #
 # Run this script when:
-#   - You want to clone all four references at once for offline study, OR
+#   - You want to clone all five references at once for offline study, OR
 #   - Your AI pair has just offered to clone one and you want to do them all.
 #
 # Otherwise, ignore it. The course works without it.
@@ -25,6 +25,7 @@ OPENCODE_REPO="${OPENCODE_REPO:-https://github.com/anomalyco/opencode}"
 HERMES_REPO="${HERMES_REPO:-https://github.com/nousresearch/hermes-agent}"
 OPENCLAW_REPO="${OPENCLAW_REPO:-https://github.com/openclaw/openclaw}"
 PAPERCLIP_REPO="${PAPERCLIP_REPO:-https://github.com/paperclipai/paperclip}"
+CC_HAHA_REPO="${CC_HAHA_REPO:-https://github.com/NanmiCoder/cc-haha.git}"
 
 REFERENCES_DIR="${REFERENCES_DIR:-references}"
 CLONE_DEPTH="${CLONE_DEPTH:-1}"    # shallow clone by default; set to 0 for full history
@@ -65,6 +66,7 @@ clone_if_missing "opencode"     "$OPENCODE_REPO"
 clone_if_missing "hermes-agent" "$HERMES_REPO"
 clone_if_missing "openclaw"     "$OPENCLAW_REPO"
 clone_if_missing "paperclip"    "$PAPERCLIP_REPO"
+clone_if_missing "cc-haha"      "$CC_HAHA_REPO"
 
 echo ""
 echo "=== Done ==="
@@ -72,7 +74,7 @@ echo ""
 
 # Report state
 present=()
-for name in opencode hermes-agent openclaw paperclip; do
+for name in opencode hermes-agent openclaw paperclip cc-haha; do
   if [ -d "$REFERENCES_DIR/$name/.git" ]; then
     present+=("$name")
   fi
