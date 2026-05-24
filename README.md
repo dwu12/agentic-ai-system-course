@@ -1,5 +1,9 @@
 # Agentic System Course - Use Agent to Learn Agent
 
+**Join the [discord channel](https://discord.gg/dWSnHAFdpb) if you want to learn and build together! **
+
+---
+
 This is a 22-chapter skeleton course on how to design, build, and operate production AI agents — written to be read with your own AI partner at your side. **An agentic system** is an AI system that can autonomously pursue goals by planning, making decisions, using tools, adapting based on feedback, having memory, etc — instead of only responding to a single prompt. A few use cases are: 
 
 - **Healthcare**: Multiple AI agents can coordinate patient intake, insurance verification, scheduling, lab monitoring, and discharge planning to automate hospital operations and reduce administrative burden.
@@ -19,6 +23,7 @@ Similar to [Andrej Karpathy's idea file on LLM-wiki](https://gist.github.com/kar
 - A step-by-step tutorial. There is no walked-through project.
 - Tied to one stack. The course never says "use LangChain" or "use Pydantic AI." Your AI partner suggests the stack that fits your project.
 - A reference manual. When you need an exact API signature, ask your AI or read the docs.
+
 
 ---
 
