@@ -5,3 +5,4 @@ questions/
 references/
 .venv
 .env
+workspace/__pycache__/
